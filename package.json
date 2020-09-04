@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "npm run lint && cd client && npm test",
+    "postinstall": "cd client && npm install",
     "start": "node server.js",
     "build": "cd client && npm run build",
     "prettify": "prettier --write .",
