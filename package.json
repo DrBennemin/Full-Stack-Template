@@ -1,5 +1,5 @@
 {
-  "name": "Full-Stack-Template",
+  "name": "fullstacktemplate",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -44,7 +44,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "CI=true npm test"
     }
   },
   "lint-staged": {
